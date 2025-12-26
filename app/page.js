@@ -6,6 +6,7 @@ import TodoForm from "@/components/TodoForm";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon, UserIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { ToastBar } from "react-hot-toast";
 
 export default function Home() {
   const router = useRouter();
@@ -164,6 +165,7 @@ export default function Home() {
             updateTodo={updateTodo}
           />
         </main>
+        
       </div>
     </div>
   );
